@@ -1,0 +1,250 @@
+html {
+		display:table;
+		width:100%;
+		height:100%;
+		box-sizing: border-box;
+	}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+		display:table-cell;
+		vertical-align:middle;
+	 }
+
+	 .row {
+ 		zoom: 1;
+	}
+
+.row:before,
+.row:after {
+  		content: "";
+  	    display: table;
+	}
+
+.row:after {
+ 		clear: both;
+	}
+
+.col-half {
+  		padding-right: 40px;
+  		float: left;
+  		width: 50%;
+
+	}
+
+.col-half:last-of-type {
+  		padding-right: 0;
+	}
+
+.col-third {
+ 		padding-right: 10px;
+  		float: left;
+  		width: 33.33333333]%;
+  		padding-bottom: 7px;
+	}
+	
+.col-third:last-of-type {
+  		padding-right: 0;
+	}
+
+.appbox{
+		background:#fff;
+		-webkit-box-shadow: 0px 0px 50px -10px rgba(0,0,0,0.25);
+	  	-moz-box-shadow: 0px 0px 50px -10px rgba(0,0,0,0.25);
+	  	margin:50px auto;
+	   	width:72%;
+	   	min-height: 620px;
+	   	display:table;
+	}
+
+.appbox > div{display:table-cell}
+
+.appbox .navigation {
+		width:150px;
+		float:left;
+	}
+
+.appbox .navigation .logo{
+		text-align:center; 
+		padding:40px 10px;
+		margin-left: 10px;
+	}
+
+.appbox .navigation .logo span{
+		display:block; 
+		font-family:'GothamBook';
+		font-size:20px; 
+		letter-spacing:1px; 
+		text-transform:uppercase; 
+		margin-top:5px;
+
+	}
+
+.appbox .navigation .nav-items{
+		list-style:none;
+		text-align:center; 
+		padding:10px 10px 2px;
+		margin-top: -10px;
+	}
+
+.appbox .navigation .nav-items li{
+		margin-bottom:20px;
+
+	}
+
+/*.appbox .navigation .nav-items li.active{
+		border-left:20px solid #fff;
+
+
+	}*/
+
+.appbox .navigation .nav-items li a{
+		display:block; 
+		padding:10px 35px;
+		color:#c9c9c9; 
+		font-size:14px;
+		font-family:'GothamBook'; 
+		text-decoration:none;
+
+	}
+
+.appbox .navigation .nav-items li b {
+    padding: 25px 0;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.appbox .navigation .nav-items a:hover {
+    display: block;
+}
+
+.appbox .navigation .nav-items li.active a{
+		color:#fff;
+		
+	}
+.appbox .navigation .nav-items li a span{
+		display:block;
+		margin-top:10px;
+	}
+
+.appbox .inner-box{
+		background:#062f4f; 
+		width:170px; 
+		float:left; 
+		position:relative;
+		min-height:640px; 
+	}
+
+.appbox .action-pane{
+		display: table;
+		width:700px; 
+		float:left;
+	 	position:relative;
+	}
+
+.appbox .action-pane .content{
+		display:table-cell;
+		text-align:left;
+		padding:30px;
+		font-family:"GothamBook";
+		color:#c0c0c2;
+		font-size:13px;
+
+	}
+
+.appbox .action-pane .content .highlighted, .appbox .action-pane .content .highlighted a{
+		font-weight:bold;
+		color:#171a21; 
+		text-decoration:none;
+		font-size:20px;
+		margin-bottom: 10px;
+
+	}
+
+.appbox .action-pane .content input, .appbox .action-pane .content button, .appbox .action-pane .content select{
+		display:block; 
+		padding:10px 20px; 
+		margin-bottom:35px; 
+		font-size:14px; 
+		width:100%;
+ 		border: 0;
+
+	}
+
+.appbox .action-pane .content input, .appbox .action-pane .content select{
+		border:1px solid #cfd5e1;
+		font-family:'GothamBook';
+		background: transparent;
+  		border: 0;
+ 		border-bottom: 2px solid #435160;
+  		outline: none;
+  		width: 270px;
+  		padding:10px; 
+	}
+
+.appbox .action-pane .content input:focus, .appbox .action-pane .content select:focus{
+		outline:0;
+		border-color:red;
+	}
+
+.select-op{
+		width: 100px !important;
+		margin-left: 29px;
+		margin-top:-2px; 
+		color: #171a21 !important;
+	}
+
+.appbox .action-pane .content button{
+		color:#fff;
+		background: #136a8a; 
+		background: linear-gradient(to right, #267871, #136a8a); 
+		border:1px solid #6F90FF;
+		font-family:'GothamMedium'; 
+		cursor:pointer; 
+		padding:15px;
+
+	}
+
+.appbox .action-pane .content button:focus{
+		outline:0; 
+		background:#37487F;
+	}
+.appbox .action-pane .content button:hover{
+		outline:0; 
+		background:#37487F;
+	} 
+.appbox .action-pane .content button:active{
+		outline:0;
+		background:#1C2440;
+	} 
+
+
+
+hr {
+border: 0;
+height: 0;
+border-top: 2px solid rgba(0, 0, 0, 0.1);
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.icon{
+	font-size: 27px;
+	color: #fff;
+}
+
+.hidden{
+	display: none;
+}
+.alert{
+	text-align: center;
+	background-color:#ff4d4d;
+	border:1px solid;
+	border-radius: 4px;
+	padding: 4px;
+	height: 40px;	
+	color: #fff;
+	font-size: 18px;
+}

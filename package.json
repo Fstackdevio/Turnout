@@ -1,0 +1,14 @@
+{
+  "name": "laces",
+  "version": "1.0.0",
+  "description": "H.O.B Desktop Applicatio\u001b[C\u001b[Dn",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Fstackdev \u001b[D",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.7.9"
+  }
+}
